@@ -44,14 +44,43 @@ public class ConsumerDAOImpl implements ConsumerDAO{
 
 	@Override
 	public boolean updateConsumer(Consumer c) {
-		// TODO Auto-generated method stub
-		return false;
+		String query="update consumer set name=?, accno=?,email=?,phone=?,password=? where cid=?";
+		PreparedStatement ps=null;
+		int res=0;
+		try {
+			ps=con.prepareStatement(query);
+			ps.setString(1,c.getName());
+			ps.setLong(2, c.getAccno());
+			ps.setString(3, c.getEmail());
+			ps.setLong(4, c.getPhone());
+			ps.setString(5,c.getPassword());
+			ps.setInt(6, c.getCid());
+			res=ps.executeUpdate();
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		if(res>0)
+		{
+			return true;
+		}else {
+			return false;
+		}
 	}
 
 	@Override
 	public boolean deleteConsumer(Consumer c) {
-		// TODO Auto-generated method stub
-		return false;
+		String query="delete from consumer where cid=?";
+		PreparedStatement ps=null;
+		int res=0;
+		try {
+			ps=con.prepareStatement(query);
+			ps.setInt(1,c.getCid());
+			res=ps.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override

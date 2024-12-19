@@ -8,15 +8,15 @@ public class Consumer {
 	private String email;
 	private long phone;
 	private String password;
-	public Consumer(int cid, String name, long accno, String email, long phone, String password) {
-		super();
-		this.cid = cid;
-		this.name = name;
-		this.accno = accno;
-		this.email = email;
-		this.phone = phone;
-		this.password = password;
-	}
+//	public Consumer(int cid, String name, long accno, String email, long phone, String password) {
+//		super();
+//		this.cid = cid;
+//		this.name = name;
+//		this.accno = accno;
+//		this.email = email;
+//		this.phone = phone;
+//		this.password = password;
+//	}
 	public int getCid() {
 		return cid;
 	}

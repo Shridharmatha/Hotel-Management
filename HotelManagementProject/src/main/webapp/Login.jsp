@@ -82,7 +82,8 @@ background-color:orange;
 <p>You dont Have Account ?<a href="Signup.jsp">signup</a></p>
 
 </div>
-<%@ include file="footer.jsp" %>
+
 </form>
 </body>
+<%@ include file="footer.jsp" %>
 </html>

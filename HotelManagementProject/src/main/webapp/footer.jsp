@@ -10,14 +10,16 @@
 .footer{
 list-style-type:none;
 margin:0;
-padding:0;
+position:fixed;
+bottom:0;
+width:100%;
 background-color:purple;
 overflow:hidden;
 background-attachment:fixed;
 
 }
 
-.one,p{
+.footer,p{
 color:white;
 text-align:center;
 }
@@ -25,15 +27,14 @@ text-align:center;
 </style>
 </head>
 <body>
-<ul class="footer">
-<li>
-<div class="one">
+
+<div class="footer">
 <center>
   <p>@ HotelManagement.com ,Email:hotelmanagement.com</p>
 </center>
 </div>
 
-</ul>
+
 
 </body>
 </html>

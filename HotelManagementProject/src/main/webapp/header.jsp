@@ -28,6 +28,9 @@ padding:10px;
 <ul class="header">
 <li class="list" href="#">Home</li>
 <li class="list" href="#">About</li>
+<li class="list" href="#">EmployeeLogin</li>
+<li class="list" href="#">Login</li>
+<li class="list" href="#">Logout</li>
 
 </ul>
 </body>

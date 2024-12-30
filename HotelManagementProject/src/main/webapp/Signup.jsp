@@ -20,12 +20,12 @@ body {
 
 .site-header {
   text-align: center;
-  padding: 40px ;
+  padding: 20px ;
   background-color: rgba(0, 0, 0, 0.5); 
-  height:550px;
+  height:532px;
   width:500px;
   margin:auto;
-  margin-top:80px;
+  margin-top:40px;
   border-radius:10% 10% 10% 10%;
   color: pink; 
 }
@@ -73,6 +73,8 @@ background-color:orange;
 </head>
 <body>
 <form>
+<%@ include file="header.jsp" %>
+
 <div class="site-header">
 <h3><i>Welcome to Hotel Application</i></h3>
  <Center><h2>Sign Up</h2></Center>
@@ -103,6 +105,7 @@ background-color:orange;
  
  </div>
  </div>
+ <%@ include file="footer.jsp" %>
 </form>
 </body>
 </html>

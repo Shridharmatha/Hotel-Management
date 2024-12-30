@@ -14,17 +14,19 @@ background-image:url('login.jpg');
 background-position:center;
 background-size:cover;
 background-repeat:no-repeat;
+
 }
 .site-header{
 background-color:rgba(0,0,0,0.6);
-padding:40px;
+padding:30px;
 margin:auto;
 margin-top:100px;
-height:300px;
+height:350px;
 width:400px;
 text-align:center;
 border-radius:5%;
 color:pink;
+
 }
 .site-header label{
 text-size:3em;
@@ -56,12 +58,14 @@ background-color:pink;
 {
 background-color:orange;
 
+
 }
 
 </style>
 </head>
 <body>
 <form>
+<%@ include file="header.jsp" %>
 <div class="site-header">
 <p>Welcome to Login Page</p>
 <h3><center>Login</center></h3>
@@ -75,9 +79,10 @@ background-color:orange;
 <br>
 <input type="submit" value="Login">
 <br>
-<p>You dont Have Account ?<a href="Signup.jsp"><input type="button" value="signup"></a></p>
+<p>You dont Have Account ?<a href="Signup.jsp">signup</a></p>
 
 </div>
+<%@ include file="footer.jsp" %>
 </form>
 </body>
 </html>
